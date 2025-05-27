@@ -1,0 +1,9 @@
+# Rider generated files
+.idea/
+
+# .NET generated files
+WxStarManager/obj
+WxStarManager/bin
+UnitTests/obj
+UnitTests/bin
+
