@@ -10,6 +10,14 @@
         <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
         <Company>mewtek</Company>
         <AssemblyVersion>0.1.0</AssemblyVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>StarAPI.NET</PackageId>
+        <Title>StarAPI.NET</Title>
+        <Authors>mewtek</Authors>
+        <Description>REST API wrapper for StarAPI routes</Description>
+        <PackageProjectUrl>https://github.com/WxStar-SRP/StarAPI.NET</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/WxStar-SRP/StarAPI.NET/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/WxStar-SRP/StarAPI.NET</RepositoryUrl>
     </PropertyGroup>
     
     

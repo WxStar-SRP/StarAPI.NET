@@ -5,17 +5,27 @@ namespace WxStarManager;
 
 public partial class Api
 {
-    public async Task<bool> RegisterService(SystemServiceIn inModel)
+    /// <summary>
+    /// Registers service information
+    /// </summary>
+    /// <param name="inModel">Service information object</param>
+    /// <returns>The database UUID as a string</returns>
+    public async Task<string> RegisterService(SystemServiceIn inModel)
     {
         try
         {
             var response = await _client.PostAsJsonAsync($"{Uri}/services/register", inModel);
             response.EnsureSuccessStatusCode();
-            return true;
+
+            string content = await response.Content.ReadAsStringAsync();
+
+            return content;
         }
         catch (HttpRequestException e)
         {
-            return false;
+            Console.WriteLine("An error occurred while trying to register the service.");
+            Console.WriteLine(e.Message);
+            return String.Empty;
         }
     }
 
