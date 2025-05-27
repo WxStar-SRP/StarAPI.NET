@@ -17,6 +17,18 @@ public class StarInfo
     [JsonPropertyName("gfxpkg_ldl")] public string? GfxPkgLdl { get; set; } = null;
 }
 
+public class ServiceInfo
+{
+    [JsonPropertyName("id")] public string ServiceId { get; set; } = "";
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("host")] public string Host { get; set; } = "";
+    [JsonPropertyName("port")] public int Port { get; set; } = 0;
+    [JsonPropertyName("pid")] public int? ProcessId { get; set; } = null;
+    [JsonPropertyName("online")] public bool Online { get; set; } = false;
+    [JsonPropertyName("last_update")] public DateTime LastUptimeReport { get; set; } = DateTime.Now;
+    [JsonPropertyName("json_stats")] public string? JsonStats { get; set; } = null;
+}
+
 public class MoonLocationResponse
 {
     [JsonPropertyName("locations")] public List<string> Locations { get; set; } = new();

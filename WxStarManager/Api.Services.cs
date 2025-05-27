@@ -29,6 +29,17 @@ public partial class Api
         }
     }
 
+    public async Task<ServiceInfo> GetServiceInfo(string serviceUuid)
+    {
+        var response = await _client.GetAsync($"{Uri}/services/{serviceUuid}");
+
+        response.EnsureSuccessStatusCode();
+
+        var content = await response.Content.ReadFromJsonAsync<ServiceInfo>();
+
+        return content;
+    }
+
     public async Task ReportUptime(SystemServiceReport inModel, string serviceUuid)
     {
         try
