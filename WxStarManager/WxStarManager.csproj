@@ -8,6 +8,8 @@
         <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
         <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
         <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+        <Company>mewtek</Company>
+        <AssemblyVersion>0.1.0</AssemblyVersion>
     </PropertyGroup>
     
     
