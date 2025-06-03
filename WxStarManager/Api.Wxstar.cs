@@ -49,4 +49,12 @@ public partial class Api
 
         return content.CueSettings;
     }
+
+    public async Task UpdateUnitLocations(string starUuid, List<string> locations, List<string>? zones = null)
+    {
+        var locationUpdate = new WxStarLocationUpdate() { Locations = locations, Zones = zones };
+
+        var response = await _client.PutAsJsonAsync($"{Uri}/wxstar/{starUuid}/set_locations", locationUpdate);
+        response.EnsureSuccessStatusCode();
+    }
 }

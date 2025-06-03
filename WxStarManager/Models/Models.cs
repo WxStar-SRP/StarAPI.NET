@@ -26,3 +26,9 @@ public class SystemServiceReport
     [JsonPropertyName("update_timestamp")] public DateTime UpdateTimestamp { get; set; } = DateTime.Now;
     [JsonPropertyName("json_stats")] public string? JsonStats { get; set; } = null;
 }
+
+public class WxStarLocationUpdate
+{
+    [JsonPropertyName("locations")] public List<string> Locations { get; set; } = new();
+    [JsonPropertyName("zones")] public List<string>? Zones { get; set; }
+}
