@@ -19,6 +19,10 @@
         <PackageLicenseUrl>https://github.com/WxStar-SRP/StarAPI.NET/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/WxStar-SRP/StarAPI.NET</RepositoryUrl>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
     
     
 
